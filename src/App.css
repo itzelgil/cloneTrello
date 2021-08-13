@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+#root {
+  display: flex;
+
+  height: 100%;
+}
 
 html {
-  background: #ddd;
-  height: 100%;
-  display: flex;
+  background-color: #f5e6e8;
 }
 
 body {
@@ -12,7 +15,56 @@ body {
 }
 
 .container {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
-  display: flex;
+  background-color: #f5e6e8;
+  padding: 2rem;
+  width: auto;
+  display: grid;
+}
+
+.col1 {
+  background-color: #d5c6e0;
+  border-radius: 2rem;
+  padding: 2rem;
+  padding-left: 0.5rem;
+}
+
+.col2 {
+  background-color: #aaa1c8;
+  border-radius: 2rem;
+  padding: 2rem;
+  padding-left: 0.5rem;
+}
+
+.col3 {
+  background-color: #967aa1;
+  border-radius: 2rem;
+  padding: 2rem;
+  padding-left: 0.5rem;
+}
+
+h1 {
+  color: black;
+  font-style: bold;
+}
+
+.input {
+  border-radius: 0.5rem;
+}
+.addbutton {
+  background-color: #192a51;
+  border-radius: 10%;
+  color: white;
+  box-shadow: none;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 0.5rem;
+}
+
+.trash {
+  background-color: #ff5964;
+}
+
+li {
+  background-color: #f78154;
 }

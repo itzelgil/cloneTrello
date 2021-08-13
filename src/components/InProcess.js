@@ -54,12 +54,13 @@ class InProcess extends Component {
         return (
             <div>
               <input 
+                className="input"
                 type="text"
                 placeholder="Type your new item here"
                 value={this.state.newItem2}
                 onChange={e => this.updateInput2("newItem2", e.target.value)}
                 />
-                <button
+                <button className="addbutton"
                   onClick={() => this.addItem2("newItem2")}
                 >
                   Add
@@ -68,7 +69,8 @@ class InProcess extends Component {
                 <ul className="list-group my-5">
                 {this.state.list2.map(item => {
                   return(
-                    <li key={item.id}>
+                    <li className="list-group-item text-capitalize d-flex justify-content-between my-3"
+                    key={item.id}>
                       {item.value}
                       <button
                         onClick={() => this.deleteItem2(item.id)}

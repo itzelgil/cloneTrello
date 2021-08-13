@@ -52,12 +52,13 @@ class DoneTasks extends Component {
         return (
             <div>
               <input 
+                className="input"
                 type="text"
                 placeholder="Type your new item here"
                 value={this.state.newItem3}
                 onChange={e => this.updateInput3("newItem3", e.target.value)}
                 />
-                <button
+                <button className="addbutton"
                   onClick={() => this.addItem3("newItem3")}
                 >
                   Add
@@ -66,7 +67,8 @@ class DoneTasks extends Component {
                 <ul className="list-group my-5">
                 {this.state.list3.map(item => {
                   return(
-                    <li key={item.id}>
+                    <li className="list-group-item text-capitalize d-flex justify-content-between border-radius my-3"
+                    key={item.id}>
                       {item.value}
                       <button
                         onClick={() => this.deleteItem3(item.id)}

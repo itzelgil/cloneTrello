@@ -11,24 +11,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component {
   render() {
     return (
-      <Container className="container" fluid="md">
-        <Row className="align-items-center">
-          
-          <Col className="col1" md="auto">
-            <h1>Add Item</h1>
+      <Container className="container" >
+        
+        <Row >
+          <Col className="col1" >
+            <h1 className="addItem">Add Item</h1>
             <TaskList />
           </Col>
           
-          <Col className="col2" md="auto">
-            <h1>In Process</h1>
+          <Col className="col2" >
+            <h1 className="inProcess">In Process</h1>
             <InProcess />
           </Col>
           
-          <Col className="col3" md="auto">
-            <h1>Done</h1>
+          <Col className="col3" >
+            <h1 className="Done">Done</h1>
             <DoneTasks />
           </Col>
-          
+
         </Row>
       </Container>
 

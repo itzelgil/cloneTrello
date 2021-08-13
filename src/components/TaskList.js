@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BiTrash } from 'react-icons/bi';
+import './TaskList.css';
 
 class TaskList extends Component {
     constructor(props){
@@ -44,20 +45,23 @@ class TaskList extends Component {
     render() {
         return (
             <div>
-                <input type="text" placeholder="Type your new item here" value={this.state.newItem} onChange={e => this.updateInput("newItem", e.target.value)} />
-
-                <button onClick={() => this.addItem("newItem")}>
+                <input type="text" placeholder="Type your new item here" value={this.state.newItem} onChange={e => this.updateInput("newItem", e.target.value)} className="input" />
+                
+                <button onClick={() => this.addItem("newItem")} className="addbutton">
                     Add
                 </button>
                 <br/>
                 <ul className="list-group my-5">
                     {this.state.list.map(item => {
                         return(
-                            <li key={item.id}>
+                            <li className="list-group-item text-capitalize d-flex justify-content-between my-3"
+                            key={item.id}>
                                 {item.value}
+                                
                                 <button onClick={() => this.deleteItem(item.id)}>
-                                    <BiTrash />
+                                    <BiTrash nameClass="trash" />
                                 </button>
+                                
                             </li>
                         )
                     })}
