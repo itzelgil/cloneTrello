@@ -54,7 +54,7 @@ class DoneTasks extends Component {
               <input 
                 className="input"
                 type="text"
-                placeholder="Type your new item here"
+                placeholder="Write here"
                 value={this.state.newItem3}
                 onChange={e => this.updateInput3("newItem3", e.target.value)}
                 />
@@ -70,7 +70,7 @@ class DoneTasks extends Component {
                     <li className="list-group-item text-capitalize d-flex justify-content-between border-radius my-3"
                     key={item.id}>
                       {item.value}
-                      <button
+                      <button className="trash"
                         onClick={() => this.deleteItem3(item.id)}
                       >
                       <BiTrash />

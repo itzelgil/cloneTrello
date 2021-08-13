@@ -45,7 +45,7 @@ class TaskList extends Component {
     render() {
         return (
             <div>
-                <input type="text" placeholder="Type your new item here" value={this.state.newItem} onChange={e => this.updateInput("newItem", e.target.value)} className="input" />
+                <input type="text" placeholder="Write here" value={this.state.newItem} onChange={e => this.updateInput("newItem", e.target.value)} className="input" />
                 
                 <button onClick={() => this.addItem("newItem")} className="addbutton">
                     Add
@@ -54,15 +54,16 @@ class TaskList extends Component {
                 <ul className="list-group my-5">
                     {this.state.list.map(item => {
                         return(
-                            <li className="list-group-item text-capitalize d-flex justify-content-between my-3"
-                            key={item.id}>
-                                {item.value}
-                                
-                                <button onClick={() => this.deleteItem(item.id)}>
-                                    <BiTrash nameClass="trash" />
-                                </button>
-                                
-                            </li>
+                            <div classNameme="list">
+                                <li className="list-group-item text-capitalize d-flex justify-content-between border-radius my-3"
+                                key={item.id}>
+                                    {item.value}
+                                    
+                                    <button onClick={() => this.deleteItem(item.id)} className="trash">
+                                        <BiTrash nameClass="trash" />
+                                    </button>  
+                                </li>
+                            </div>
                         )
                     })}
                 </ul>

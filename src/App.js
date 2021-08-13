@@ -13,19 +13,19 @@ class App extends Component {
     return (
       <Container className="container" >
         
-        <Row >
+        <Row className="row1">
           <Col className="col1" >
-            <h1 className="addItem">Add Item</h1>
+            <h2 className="addItem">New Task</h2>
             <TaskList />
           </Col>
           
           <Col className="col2" >
-            <h1 className="inProcess">In Process</h1>
+            <h2 className="inProcess">In Process</h2>
             <InProcess />
           </Col>
           
           <Col className="col3" >
-            <h1 className="Done">Done</h1>
+            <h2 className="Done">Done</h2>
             <DoneTasks />
           </Col>
 

@@ -56,7 +56,7 @@ class InProcess extends Component {
               <input 
                 className="input"
                 type="text"
-                placeholder="Type your new item here"
+                placeholder="Write here"
                 value={this.state.newItem2}
                 onChange={e => this.updateInput2("newItem2", e.target.value)}
                 />
@@ -72,7 +72,7 @@ class InProcess extends Component {
                     <li className="list-group-item text-capitalize d-flex justify-content-between my-3"
                     key={item.id}>
                       {item.value}
-                      <button
+                      <button className="trash"
                         onClick={() => this.deleteItem2(item.id)}
                       >
                       <BiTrash />

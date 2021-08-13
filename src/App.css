@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 #root {
   display: flex;
-
   height: 100%;
+  background-color: #f5e6e8;
 }
 
 html {
@@ -18,39 +18,50 @@ body {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   background-color: #f5e6e8;
-  padding: 2rem;
-  width: auto;
-  display: grid;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .col1 {
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-color: #d5c6e0;
   border-radius: 2rem;
-  padding: 2rem;
-  padding-left: 0.5rem;
 }
 
 .col2 {
   background-color: #aaa1c8;
   border-radius: 2rem;
-  padding: 2rem;
-  padding-left: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .col3 {
   background-color: #967aa1;
   border-radius: 2rem;
-  padding: 2rem;
-  padding-left: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 h1 {
   color: black;
   font-style: bold;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+.addItem,
+.inProcess,
+.Done {
+  color: white;
+  font-style: bold;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
 
 .input {
   border-radius: 0.5rem;
+  border-color: white;
+  width: auto;
 }
 .addbutton {
   background-color: #192a51;
@@ -62,9 +73,13 @@ h1 {
 }
 
 .trash {
-  background-color: #ff5964;
+  background-color: #ff686b;
+  border-radius: 1rem;
+  border-color: #ff686b;
+  color: white;
 }
 
+.list-group-item,
 li {
   background-color: #f78154;
 }
