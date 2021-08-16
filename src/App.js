@@ -5,29 +5,51 @@ import TaskList from './components/TaskList';
 import InProcess from './components/InProcess';
 import DoneTasks from './components/DoneTasks';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import logo from './images/logo.png';
 
 
 class App extends Component {
   render() {
     return (
-      <Container className="container" >
-        
+      <Container fluid="xl" className="container" >
         <Row className="row1">
-          <Col className="col1" >
+        <div className="header1">
+        <img src={logo} alt="logo" className="logo"/>
+        <br />
+        <br />
+        
+        <h1>Trello Clone made by Itzel Gil</h1>
+        <br />
+        <br />
+        </div>
+        </Row>
+
+        <Row className="row2">
+          <Col sm={{ size: 'auto', offset: 1 }}  className="col1" >
+            <br />
             <h2 className="addItem">New Task</h2>
+            <br />
             <TaskList />
           </Col>
           
-          <Col className="col2" >
+
+          
+          <Col sm={{ size: 'auto', offset: 1 }} className="col2" >
+          <br />
             <h2 className="inProcess">In Process</h2>
+            <br />
             <InProcess />
           </Col>
           
-          <Col className="col3" >
+
+          
+          <Col sm={{ size: 'auto', offset: 1 }} className="col3" >
+            <br />
             <h2 className="Done">Done</h2>
+            <br />
             <DoneTasks />
           </Col>
+         
 
         </Row>
       </Container>

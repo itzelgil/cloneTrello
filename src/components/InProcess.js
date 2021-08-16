@@ -60,6 +60,7 @@ class InProcess extends Component {
                 value={this.state.newItem2}
                 onChange={e => this.updateInput2("newItem2", e.target.value)}
                 />
+        
                 <button className="addbutton"
                   onClick={() => this.addItem2("newItem2")}
                 >
