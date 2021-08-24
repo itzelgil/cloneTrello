@@ -89,5 +89,16 @@ h1 {
 
 .list-group-item,
 li {
-  background-color: #f78154;
+  background-color: white;
+  border-radius: 1em;
+}
+
+#tasklistGlobal2 {
+  width: 300px;
+  min-height: 300px;
+}
+
+#tasklistGlobal3 {
+  width: 300px;
+  min-height: 300px;
 }
