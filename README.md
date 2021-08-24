@@ -6,6 +6,7 @@ To create a page similary to Trello
 
 # Technologies used
 
+<pre>
 -HTML5
 -CSS3
 -Git
@@ -27,3 +28,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 -cd client
 -npm install
 -npm start
+</pre>
