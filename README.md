@@ -12,10 +12,16 @@ To create a page similary to Trello
 -Git
 -ES6
 -Bootstrap
+</pre>
 
 # Performance
 
-You should be able to create a list -You should be able to create tasks -You should be able to delete the tasks and lists -Using drag&drop, you should be able to organize the tasks and lists
+<pre>
+-Create a list 
+-Create tasks 
+-Delete the tasks and lists 
+-Drag and drop of the tasks in each list
+</pre>
 
 # Getting Started with Create React App
 
@@ -23,6 +29,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To try this project:
 
+<pre>
 -git clone https://github.com/itzelgil/cloneTrello
 -cd cloneTrello
 -cd client
