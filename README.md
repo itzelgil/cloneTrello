@@ -6,7 +6,11 @@ To create a page similary to Trello
 
 # Technologies used
 
-HTML5 CSS3 Git ES6 Bootstrap
+-HTML5
+-CSS3
+-Git
+-ES6
+-Bootstrap
 
 # Performance
 
@@ -18,8 +22,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To try this project:
 
-git clone https://github.com/itzelgil/cloneTrello
-cd cloneTrello
-cd client
-npm install
-npm start
+-git clone https://github.com/itzelgil/cloneTrello
+-cd cloneTrello
+-cd client
+-npm install
+-npm start
